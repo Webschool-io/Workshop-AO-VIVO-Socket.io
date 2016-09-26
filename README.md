@@ -4,7 +4,7 @@
 
 Nesse workshop sobre [Socket.io](http://socket.io/) você irá aprender a criar um sistema de Chat em tempo real, com salas, mensagens privadas e etc.
 
-Hoje em dia o [Socket.io](http://socket.io/) é largamente utilizado em sistemas web que utilizam funcionaidades de tempo rela onde o servidor irá enviar os dados sem que o cliente necessite requisita-las e isso dá um *up* enorme em seus sistemas web.
+Hoje em dia o [Socket.io](http://socket.io/) é amplamente utilizado em sistemas web que fazem o uso de informações em tempo real onde o servidor irá enviar os dados sem que o cliente necessite requisita-las, tornando a experiência do usuario mais atrativa.
 
 Com mais de 3,479,533 downloads, e aumentando, no último mês é um dos módulos completos mais utilizados atualmente.
 
