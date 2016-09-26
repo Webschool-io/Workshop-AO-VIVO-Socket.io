@@ -49,7 +49,7 @@ O custo por aluno será de: **R$120** via Eventick/Pagseguro/Paypal ou com **DES
 
 ## Pré-requisitos
 
-Os pré-requisitos para esse worksho são bem básicos, caso você já tenha visto os módulos de [Node.js]() e [Angular]() do [Be MEAN]() **você já está mais que apto para fazer esse workshop**.
+Os pré-requisitos para esse worksho são bem básicos, caso você já tenha visto os módulos de [Node.js](https://www.youtube.com/playlist?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ) e [Angular](https://www.youtube.com/playlist?list=PL77JVjKTJT2hfviaP9JV_ZyJWSD4je7Df) do [Be MEAN](https://www.youtube.com/channel/UCKdo1RaF8gzfhvkOdZv_ojg/playlists?sort=dd&shelf_id=0&view=1) **você já está mais que apto para fazer esse workshop**.
 
 Caso ainda não tenha feito basta saber:
 
