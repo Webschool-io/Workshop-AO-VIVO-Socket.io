@@ -8,7 +8,7 @@ Hoje em dia o [Socket.io](http://socket.io/) é amplamente utilizado em sistemas
 
 Com mais de 3,479,533 downloads, e aumentando, no último mês é um dos módulos completos mais utilizados atualmente.
 
-Esse workshop será pago, porém apenas até alvançar a meta dele que é: **R$2000**!
+Esse workshop será pago, porém apenas até alcançar a meta dele que é: **R$2000**!
 
 Após alcançarmos essa meta, que deve dar no máximo 3 turmas de 9 alunos, irei liberar **GRATUITAMENTE PARA TODOS**, porém só os alunos doadores terão acesso à um grupo, do Telegram, especial para tirar suas dúvidas de forma mais direta e rápida.
 
