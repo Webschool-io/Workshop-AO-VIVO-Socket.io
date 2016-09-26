@@ -40,3 +40,16 @@ Todas serão **AO VIVO** via Hangouts.
 O custo por aluno será de: **R$120** via Eventick/Pagseguro/Paypal ou com **DESCONTO à vista ficando R$100**.
 
 *ps: à vista apenas via depósito ou transferência bancária para minha conta na Caixa.*
+
+## Pré-requisitos
+
+Os pré-requisitos para esse worksho são bem básicos, caso você já tenha visto os módulos de [Node.js]() e [Angular]() do [Be MEAN]() **você já está mais que apto para fazer esse workshop**.
+
+Caso ainda não tenha feito basta saber:
+
+- ler
+- escrever
+- pensar
+- perguntar
+- Node.js básico
+- AngularJs básico
