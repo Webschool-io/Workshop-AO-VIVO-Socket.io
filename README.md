@@ -17,3 +17,14 @@ As funcionalidades a serem desenvolvidas nesse módulo são:
 - mostrar ícone de envio de mensagem
 - mostrar ícone de recebimento de mensagem
 - mostrar ícone de leitura de mensagem
+
+## Aulas
+
+Teremos 2 tipos de turmas:
+
+- dia de semana: 5 dias de 1 hora cada
+- final de semana: 2 dias de 2.5 horas cada
+
+Todas serão **AO VIVO** via Hangouts.
+
+*ps: caso eu ache uma ferramenta melhor e que comporte mais de 10 pessoas poderá ser trocada.*
