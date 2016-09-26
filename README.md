@@ -35,6 +35,12 @@ Todas serão **AO VIVO** via Hangouts.
 
 *ps: caso eu ache uma ferramenta melhor e que comporte mais de 10 pessoas poderá ser trocada.*
 
+### Início
+
+O início de cada turma se dará na semana após o fechamento dela que deve ser com 8, mínimo, ou 9 alunos, máximo. Por exemplo:
+
+Estou iniciando a divulgação agora 26 de Setembro de 2016, caso feche até 30 de Stemebro de 2016 esse módulo iniciará em 3 de Outubro de 2016.
+
 ## Custo
 
 O custo por aluno será de: **R$120** via Eventick/Pagseguro/Paypal ou com **DESCONTO à vista ficando R$100**.
