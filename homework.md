@@ -5,6 +5,6 @@
 - Lucas: Notificações - notificar 1 ou mais usuários sem chat
 - Adalberto: BotFAKE
 - Hebert: Grupos publicos e privados com link
-- : Sessão integrada
 - : Domótica - prova de conceito utilizando sensores FAKE
 - Fautso: Emojis - envio e visualização de emoticons
+- Higor: ???
