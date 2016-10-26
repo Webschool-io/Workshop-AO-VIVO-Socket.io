@@ -59,3 +59,27 @@ Caso ainda não tenha feito basta saber:
 - perguntar
 - Node.js básico
 - AngularJs básico
+
+## Client
+
+Nosso cliente será baseado no Atomic Design e o mesmo *frontend* será feito em:
+
+- Angular 1
+- Angular 2
+- React
+- Vue
+
+### Atomic Design
+
+Primeiramente precisamos definir quais são nossos átomos!
+
+- botão de enviar mensagem
+- input para digitar mensagem
+- input para digitar nome da sala
+- input para digitar seu nome
+- título da sala atual
+- texto com as mensagens
+- texto com nome das salas
+- texto com o nome dos usuários
+
+## Server
