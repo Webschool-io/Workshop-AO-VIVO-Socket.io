@@ -13,11 +13,15 @@ Esses módulos sao:
 - Hebert: Grupos publicos e privados com link
 - Erni: Domótica - prova de conceito utilizando sensores FAKE
 - Fausto: Emojis - envio e visualização de emoticons
-- Higor: ???
+- Higor: MEAN
 
 ## Objetivo
 
+Criar uma plataforma de chat utilizando Websockets que seja facilmente utilizável e que mais módulos possam ser criados para que o usuário possa escolher quais funcionalidades deseja em seu sistema de chat.
 
+Essa plataforma deverá ser utiizada tanto para chats, domótica, etc.
+
+Para isso precisamos apenas definir a Interface de comunicação entre os módulos.
 
 ## Trabalho final
 

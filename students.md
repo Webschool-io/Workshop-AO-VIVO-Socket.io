@@ -9,3 +9,6 @@
 - Fausto: https://github.com/faustobdls/workshop-socket-io
 - Higor: ???
 
+## Lucas
+
+- Frontend: React
