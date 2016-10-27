@@ -73,13 +73,18 @@ Nosso cliente será baseado no Atomic Design e o mesmo *frontend* será feito em
 
 Primeiramente precisamos definir quais são nossos átomos!
 
-- botão de enviar mensagem
 - input para digitar mensagem
 - input para digitar nome da sala
 - input para digitar seu nome
+- botão de enviar mensagem
+- botão de criar sala
 - título da sala atual
 - texto com as mensagens
 - texto com nome das salas
 - texto com o nome dos usuários
+
+#### Átomos
+
+
 
 ## Server
