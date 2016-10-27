@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+  <script src="app.js"></script>
+  <style>
+    .success {
+      border: 2px solid green;
+    }
+    .error {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div ng-controller="FormCtrl as vmForm">
+    <div ng-controller="MessageCtrl as vm">
+      <messagetext message="vm.message"></messagetext>
+    </div>
+    <div ng-controller="SendCtrl as vmSend">
+      <buttonsend></buttonsend>
+    </div>
+  </div>
+
+</body>
+</html>

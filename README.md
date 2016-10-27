@@ -145,11 +145,12 @@ Nesse átomo usaremos o átomo base: `.atom-input-text`. Porém seu identificado
   padding: 0.5rem
 ```
 
-Isso na parte visual, mas para criar esse átomo, utilizando o Angular1, faremos com [diretivas](https://github.com/suissa/angularjs-directive-manual). Para isso vamos definir algumas propriedades que todas as diretivas terão:
+Isso na parte visual, mas para criar esse átomo, utilizando o Angular1, faremos com [diretivas](https://github.com/suissa/angularjs-directive-manual) ou melhor dizendo com [components](). Para isso vamos definir algumas propriedades que todas os componentes terão:
 
 - [restrict](https://github.com/suissa/angularjs-directive-manual#restrict): E
 - [scope](https://github.com/suissa/angularjs-directive-manual#scope): true ou isolate?
 - [transclude](https://github.com/suissa/angularjs-directive-manual#transclude): true?
 
+- [https://toddmotto.com/exploring-the-angular-1-5-component-method/](https://toddmotto.com/exploring-the-angular-1-5-component-method/)
 
 ## Server
