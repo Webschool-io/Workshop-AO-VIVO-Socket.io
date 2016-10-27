@@ -85,6 +85,30 @@ Primeiramente precisamos definir quais são nossos átomos!
 
 #### Átomos
 
+Antes de tudo definimos os átomos básicos que precisamos para utilizar de base para os átomos anteriormente definidos, então eles serão:
 
+- input/text: .atom-input-text
+- button/submit: .atom-button-submit
+- h1: .atom-title-primary
+- span: .atom-text-line
+- p: .atom-text-paragraph
+
+```stylus
+.atom-input-text {
+  @extend $atom-text-base
+}
+```
+
+##### Átomo: input para digitar mensagem
+
+Nesse átomo usaremos o átomo base: `.atom-input-text`. Porém seu identificador será: `.atom-message-text`
+
+
+```stylus
+.atom-message-text {
+  @extend .atom-input-text
+  padding: 0.5rem
+}
+```
 
 ## Server
