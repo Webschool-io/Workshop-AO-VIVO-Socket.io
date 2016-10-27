@@ -93,10 +93,13 @@ Antes de tudo definimos os átomos básicos que precisamos para utilizar de base
 - span: .atom-text-line
 - p: .atom-text-paragraph
 
+
+Exemplo em Stylus:
+
 ```stylus
-.atom-input-text {
+.atom-input-text 
   @extend $atom-text-base
-}
+
 ```
 
 ##### Átomo: input para digitar mensagem
@@ -105,10 +108,9 @@ Nesse átomo usaremos o átomo base: `.atom-input-text`. Porém seu identificado
 
 
 ```stylus
-.atom-message-text {
+.atom-message-text
   @extend .atom-input-text
   padding: 0.5rem
-}
 ```
 
 ## Server
