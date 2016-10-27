@@ -102,6 +102,38 @@ Exemplo em Stylus:
 
 ```
 
+#### Átomos: Eventos
+
+Cada átomo nosso será independente por isso precisa de uma forma de se comunicar com os outros componentes e para isso utilizaremos: **Eventos!**
+
+Para os átomos de input nós sempre teremos atrelado a um evento a sua função de validação, caso exista, por exemplo no átomo: `atom-message-text`.
+
+```js
+const name = "atom-message-text"
+const event = "blur"
+const validate = (text) => {
+  const result = (text !== null && text !== undefined && text !== '')
+
+  if (result)
+    Event.emit('validate:success:atom-message-text')
+  else
+    Event.emit('validate:error:atom-message-text')
+}
+
+const config = {
+  name,
+  validator: {
+    event,
+    validate
+  }
+}
+```
+
+*ps: exemplo conceitual com Eventos **(não funcional)***
+
+Nesse caso ele deverá executar a função `validate` no evento `blur` desse input e após sua validação ele deverá emitir um evento ou de sucesso (`validate:success:atom-message-text`) ou de erro (`validate:error:atom-message-text`)
+
+
 ##### Átomo: input para digitar mensagem
 
 Nesse átomo usaremos o átomo base: `.atom-input-text`. Porém seu identificador será: `.atom-message-text`
