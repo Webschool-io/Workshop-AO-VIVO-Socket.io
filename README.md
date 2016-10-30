@@ -96,7 +96,7 @@ Antes de tudo definimos os átomos básicos que precisamos para utilizar de base
 
 Exemplo em Stylus:
 
-```stylus
+```
 .atom-input-text 
   @extend $atom-text-base
 
@@ -139,7 +139,7 @@ Nesse caso ele deverá executar a função `validate` no evento `blur` desse inp
 Nesse átomo usaremos o átomo base: `.atom-input-text`. Porém seu identificador será: `.atom-message-text`
 
 
-```stylus
+```
 .atom-message-text
   @extend .atom-input-text
   padding: 0.5rem

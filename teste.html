@@ -1,0 +1,121 @@
+<h1 id="workshop-ao-vivo-sobre-socket-io">Workshop AO VIVO sobre Socket.io</h1>
+<p><img src="http://www.cnydev.org/wp-content/uploads/2015/03/socketio2.png" alt="socket.io logo"></p>
+<p>Nesse workshop sobre <a href="http://socket.io/">Socket.io</a> você irá aprender a criar um sistema de Chat em tempo real, com salas, mensagens privadas e etc.</p>
+<p>Hoje em dia o <a href="http://socket.io/">Socket.io</a> é amplamente utilizado em sistemas web que fazem o uso de informações em tempo real onde o servidor irá enviar os dados sem que o cliente necessite requisita-las, tornando a experiência do usuario mais atrativa.</p>
+<p>Com mais de 3,479,533 downloads, e aumentando, no último mês é um dos módulos completos mais utilizados atualmente.</p>
+<p>Esse workshop será pago, porém apenas até alcançar a meta dele que é: <strong>R$2000</strong>!</p>
+<p>Após alcançarmos essa meta, que deve dar no máximo 3 turmas de 9 alunos, irei liberar <strong>GRATUITAMENTE PARA TODOS</strong>, porém só os alunos doadores terão acesso à um grupo, do Telegram, especial para tirar suas dúvidas de forma mais direta e rápida.</p>
+<h2 id="ementa">Ementa</h2>
+<p>As funcionalidades a serem desenvolvidas nesse módulo são:</p>
+<ul>
+<li>criação de grupos com várias pessoas</li>
+<li>criação de chat individual</li>
+<li>envio de mensagem para algumas pessoas escolhidas</li>
+<li>mostrar quando a pessoa estiver digitando</li>
+<li>mostrar ícone de envio de mensagem</li>
+<li>mostrar ícone de recebimento de mensagem</li>
+<li>mostrar ícone de leitura de mensagem</li>
+</ul>
+<h2 id="aulas">Aulas</h2>
+<p>Teremos 2 tipos de turmas:</p>
+<ul>
+<li>dia de semana: 5 dias de 1 hora cada</li>
+<li>final de semana: 2 dias de 2.5 horas cada</li>
+</ul>
+<p>Todas serão <strong>AO VIVO</strong> via Hangouts.</p>
+<p><em>ps: caso eu ache uma ferramenta melhor e que comporte mais de 10 pessoas poderá ser trocada.</em></p>
+<h3 id="in-cio">Início</h3>
+<p>O início de cada turma se dará na semana após o fechamento dela que deve ser com 8, mínimo, ou 9 alunos, máximo. Por exemplo:</p>
+<p>Estou iniciando a divulgação agora 26 de Setembro de 2016, caso feche até 30 de Stemebro de 2016 esse módulo iniciará em 3 de Outubro de 2016.</p>
+<h2 id="custo">Custo</h2>
+<p>O custo por aluno será de: <strong>R$120</strong> via Eventick/Pagseguro/Paypal ou com <strong>DESCONTO à vista ficando R$100</strong>.</p>
+<p><em>ps: à vista apenas via depósito ou transferência bancária para minha conta na Caixa.</em></p>
+<h2 id="pr-requisitos">Pré-requisitos</h2>
+<p>Os pré-requisitos para esse worksho são bem básicos, caso você já tenha visto os módulos de <a href="https://www.youtube.com/playlist?list=PL77JVjKTJT2hP_lxL88oDo2rJvOskpGfJ">Node.js</a> e <a href="https://www.youtube.com/playlist?list=PL77JVjKTJT2hfviaP9JV_ZyJWSD4je7Df">Angular</a> do <a href="https://www.youtube.com/channel/UCKdo1RaF8gzfhvkOdZv_ojg/playlists?sort=dd&amp;shelf_id=0&amp;view=1">Be MEAN</a> <strong>você já está mais que apto para fazer esse workshop</strong>.</p>
+<p>Caso ainda não tenha feito basta saber:</p>
+<ul>
+<li>ler</li>
+<li>escrever</li>
+<li>pensar</li>
+<li>perguntar</li>
+<li>Node.js básico</li>
+<li>AngularJs básico</li>
+</ul>
+<h2 id="client">Client</h2>
+<p>Nosso cliente será baseado no Atomic Design e o mesmo <em>frontend</em> será feito em:</p>
+<ul>
+<li>Angular 1</li>
+<li>Angular 2</li>
+<li>React</li>
+<li>Vue</li>
+</ul>
+<h3 id="atomic-design">Atomic Design</h3>
+<p>Primeiramente precisamos definir quais são nossos átomos!</p>
+<ul>
+<li>input para digitar mensagem</li>
+<li>input para digitar nome da sala</li>
+<li>input para digitar seu nome</li>
+<li>botão de enviar mensagem</li>
+<li>botão de criar sala</li>
+<li>título da sala atual</li>
+<li>texto com as mensagens</li>
+<li>texto com nome das salas</li>
+<li>texto com o nome dos usuários</li>
+</ul>
+<h4 id="-tomos">Átomos</h4>
+<p>Antes de tudo definimos os átomos básicos que precisamos para utilizar de base para os átomos anteriormente definidos, então eles serão:</p>
+<ul>
+<li>input/text: .atom-input-text</li>
+<li>button/submit: .atom-button-submit</li>
+<li>h1: .atom-title-primary</li>
+<li>span: .atom-text-line</li>
+<li>p: .atom-text-paragraph</li>
+</ul>
+<p>Exemplo em Stylus:</p>
+<pre><code><div class="highlight"><pre><span class="p">.</span><span class="nx">atom</span><span class="o">-</span><span class="nx">input</span><span class="o">-</span><span class="nx">text</span> 
+  <span class="err">@</span><span class="nx">extend</span> <span class="nx">$atom</span><span class="o">-</span><span class="nx">text</span><span class="o">-</span><span class="nx">base</span>
+</pre></div>
+
+</code></pre><h4 id="-tomos-eventos">Átomos: Eventos</h4>
+<p>Cada átomo nosso será independente por isso precisa de uma forma de se comunicar com os outros componentes e para isso utilizaremos: <strong>Eventos!</strong></p>
+<p>Para os átomos de input nós sempre teremos atrelado a um evento a sua função de validação, caso exista, por exemplo no átomo: <code>atom-message-text</code>.</p>
+<pre><code class="lang-js"><div class="highlight"><pre><span class="kr">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;atom-message-text&quot;</span>
+<span class="kr">const</span> <span class="nx">event</span> <span class="o">=</span> <span class="s2">&quot;blur&quot;</span>
+<span class="kr">const</span> <span class="nx">validate</span> <span class="o">=</span> <span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">(</span><span class="nx">text</span> <span class="o">!==</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="nx">text</span> <span class="o">!==</span> <span class="kc">undefined</span> <span class="o">&amp;&amp;</span> <span class="nx">text</span> <span class="o">!==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+    <span class="nx">Event</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;validate:success:atom-message-text&#39;</span><span class="p">)</span>
+  <span class="k">else</span>
+    <span class="nx">Event</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;validate:error:atom-message-text&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kr">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">name</span><span class="p">,</span>
+  <span class="nx">validator</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">event</span><span class="p">,</span>
+    <span class="nx">validate</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+</code></pre>
+<p><em>ps: exemplo conceitual com Eventos <strong>(não funcional)</strong></em></p>
+<p>Nesse caso ele deverá executar a função <code>validate</code> no evento <code>blur</code> desse input e após sua validação ele deverá emitir um evento ou de sucesso (<code>validate:success:atom-message-text</code>) ou de erro (<code>validate:error:atom-message-text</code>)</p>
+<h5 id="-tomo-input-para-digitar-mensagem">Átomo: input para digitar mensagem</h5>
+<p>Nesse átomo usaremos o átomo base: <code>.atom-input-text</code>. Porém seu identificador será: <code>.atom-message-text</code></p>
+<pre><code><div class="highlight"><pre><span class="p">.</span><span class="nx">atom</span><span class="o">-</span><span class="nx">message</span><span class="o">-</span><span class="nx">text</span>
+  <span class="err">@</span><span class="nx">extend</span> <span class="p">.</span><span class="nx">atom</span><span class="o">-</span><span class="nx">input</span><span class="o">-</span><span class="nx">text</span>
+  <span class="nx">padding</span><span class="o">:</span> <span class="mf">0.5</span><span class="nx">rem</span>
+</pre></div>
+
+</code></pre><p>Isso na parte visual, mas para criar esse átomo, utilizando o Angular1, faremos com <a href="https://github.com/suissa/angularjs-directive-manual">diretivas</a> ou melhor dizendo com <a href="">components</a>. Para isso vamos definir algumas propriedades que todas os componentes terão:</p>
+<ul>
+<li><a href="https://github.com/suissa/angularjs-directive-manual#restrict">restrict</a>: E</li>
+<li><a href="https://github.com/suissa/angularjs-directive-manual#scope">scope</a>: true ou isolate?</li>
+<li><p><a href="https://github.com/suissa/angularjs-directive-manual#transclude">transclude</a>: true?</p>
+</li>
+<li><p><a href="https://toddmotto.com/exploring-the-angular-1-5-component-method/">https://toddmotto.com/exploring-the-angular-1-5-component-method/</a></p>
+</li>
+</ul>
+<h2 id="server">Server</h2>
